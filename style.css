@@ -1,0 +1,119 @@
+
+
+.rectangle1{
+box-sizing: border-box;
+position: absolute;
+width: 491px;
+height: 309px;
+background: #313131;
+border: 1px solid #FFC400;
+}
+
+
+.rectangle10{
+position: absolute;
+width: 410px;
+height: 258px;
+background: #F9F9F9;
+border: 2px solid #FFC300;
+}
+
+.group7{
+position: absolute;
+width: 244px;
+height: 47px;
+}
+
+.group1{
+position: absolute;
+width: 252px;
+height: 57.01px;
+}
+
+.group3{
+position: absolute;
+width: 146px;
+height: 8px;
+}
+
+.group4{
+position: absolute;
+width: 142px;
+height: 8px;
+transform: rotate(-90deg);
+}
+
+.group5{
+position: absolute;
+width: 146px;
+height: 8px;
+}
+
+.group6{
+position: absolute;
+width: 142px;
+height: 8px;
+transform: rotate(-90deg);
+}
+
+.offrecog{
+position: absolute;
+width: 339px;
+height: 24px;
+font-family: 'Metal';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 49px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+
+.certifiedjit{
+position: absolute;
+width: 177px;
+height: 31px;
+font-family: 'Metal';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 49px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+
+.date{
+position: absolute;
+width: 54px;
+height: 29px;
+font-family: 'Metal';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+
+.issuer{
+position: absolute;
+width: 54px;
+height: 29px;
+font-family: 'Metal';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
