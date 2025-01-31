@@ -73,8 +73,8 @@ form button:hover {
 
 .cert-footer {
     position: absolute;
-    bottom: 15px;
-    width: 83%;
+    bottom: 20px;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
@@ -102,3 +102,35 @@ form button:hover {
 #returnButton:hover {
     background-color: #0056b3;
 }
+
+@media print {
+    body {
+        margin: 0;
+        background-color: #fff;
+    }
+
+    #certificate {
+        width: 100%;
+        height: auto;
+        max-width: none;
+        box-shadow: none;
+        page-break-after: always;
+    }
+
+    .cert-footer {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .cert-footer .left, .cert-footer .right {
+        width: 50%;
+    }
+
+    @page {
+        size: 11in 8.5in;
+        margin: 1in;
+    }
+}
+

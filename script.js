@@ -15,10 +15,16 @@ function generateCertificate() {
     document.getElementById('certificate').style.display = 'block';
     document.getElementById('certForm').style.display = 'none';
     document.getElementById('returnButton').style.display = 'block';
+    document.getElementById('printButton').style.display = 'block';
 }
 
 function returnToForm() {
     document.getElementById('certificate').style.display = 'none';
     document.getElementById('certForm').style.display = 'block';
     document.getElementById('returnButton').style.display = 'none';
+    document.getElementById('printButton').style.display = 'none';
+}
+
+function printCertificate() {
+    window.print();
 }
