@@ -1,119 +1,104 @@
-
-
-.rectangle1{
-box-sizing: border-box;
-position: absolute;
-width: 491px;
-height: 309px;
-background: #313131;
-border: 1px solid #FFC400;
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
 }
 
-
-.rectangle10{
-position: absolute;
-width: 410px;
-height: 258px;
-background: #F9F9F9;
-border: 2px solid #FFC300;
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
 }
 
-.group7{
-position: absolute;
-width: 244px;
-height: 47px;
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.group1{
-position: absolute;
-width: 252px;
-height: 57.01px;
+form input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.group3{
-position: absolute;
-width: 146px;
-height: 8px;
+form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.group4{
-position: absolute;
-width: 142px;
-height: 8px;
-transform: rotate(-90deg);
+form button:hover {
+    background-color: #218838;
 }
 
-.group5{
-position: absolute;
-width: 146px;
-height: 8px;
+#certificate {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
 }
 
-.group6{
-position: absolute;
-width: 142px;
-height: 8px;
-transform: rotate(-90deg);
+#certificate .cert-header {
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
 }
 
-.offrecog{
-position: absolute;
-width: 339px;
-height: 24px;
-font-family: 'Metal';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 49px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #000000;
+#certificate h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.certifiedjit{
-position: absolute;
-width: 177px;
-height: 31px;
-font-family: 'Metal';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 49px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #000000;
+#certificate h2, #certificate h3, #certificate h4 {
+    margin: 10px 0;
 }
 
-.date{
-position: absolute;
-width: 54px;
-height: 29px;
-font-family: 'Metal';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 29px;
-/* identical to box height */
-display: flex;
-align-items: center;
-text-align: center;
-color: #000000;
+#certificate p {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
-.issuer{
-position: absolute;
-width: 54px;
-height: 29px;
-font-family: 'Metal';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 29px;
-/* identical to box height */
-display: flex;
-align-items: center;
-text-align: center;
-color: #000000;
+.cert-footer {
+    position: absolute;
+    bottom: 15px;
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.cert-footer .left {
+    text-align: left;
+}
+
+.cert-footer .right {
+    text-align: right;
+}
+
+#returnButton {
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#returnButton:hover {
+    background-color: #0056b3;
 }

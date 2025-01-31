@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Certificate Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form id="certForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="title">Title for Certification:</label>
+        <input type="text" id="title" name="title"><br><br>
+        
+        <label for="issuer">Issuer Name:</label>
+        <input type="text" id="issuer" name="issuer"><br><br>
+        
+        <label for="reason">Reason for Award:</label>
+        <input type="text" id="reason" name="reason"><br><br>
+        
+        <button type="button" onclick="generateCertificate()">Generate Certificate</button>
+    </form>
     
-    <p class="offrecog">hi</p>
+    <div id="certificate" style="display:none;">
+        <div class="cert-header">
+            <h1 id="certHeader"></h1>
+        </div>
+        <p>This certificate officially recognizes</p>
+        <h2 id="certName"></h2>
+        <p>as a certified <span id="certTitle"></span></p>
+        <p>because <span id="certReason"></span></p>
+        <div class="cert-footer">
+            <h4 id="certDate" class="left"></h4>
+            <h4 id="certIssuer" class="right"></h4>
+        </div>
+    </div>
+    
+    <button id="returnButton" type="button" onclick="returnToForm()" style="display:none;">Return to Form</button>
 
+    <script src="script.js"></script>
 </body>
 </html>
