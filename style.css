@@ -144,14 +144,15 @@ h1{
     }
 
     #certificate {
-        width: 95%;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         height: 300px;
-        max-width: none;
-        box-shadow: none;
-        page-break-after: always;
-        border: 1px solid;
+        width: 800px;
+        text-align: center;
+        position: relative;
         border: 1px solid #FFc300;
-        margin-top:150px;
     }
 
     .cert-footer {
@@ -160,7 +161,21 @@ h1{
         justify-content: space-between;
         padding: 0 50px;
         align-items: flex-end;
+        transform: translate(0%,70%);
     }
+
+    .cert-header{
+        background-color: #FFc300 !important;
+        width: 50%;
+        transform: translate(50%,-30%);
+    }
+
+    #cert-header{
+        background-color: #FFc300 !important;
+        width: 50%;
+        transform: translate(50%,-30%);
+    }
+    
 
     .cert-footer .left, .cert-footer .right {
         width: 50%;
@@ -168,7 +183,6 @@ h1{
 
     @page {
         size: 11in 8.5in;
-        margin: 1in;
     }
 
     .butt {
