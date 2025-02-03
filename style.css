@@ -28,7 +28,7 @@ form input {
 }
 
 form button {
-    background-color: #28a745;
+    background-color: #32c755;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -37,7 +37,11 @@ form button {
 }
 
 form button:hover {
-    background-color: #218838;
+    background-color: #188331;
+}
+
+#certForm{
+    transform: translate(0%,35%);
 }
 
 #certificate {
@@ -48,13 +52,25 @@ form button:hover {
     max-width: 600px;
     height: 300px;
     margin: 20px auto;
+    margin-top: 200px;
     text-align: center;
     position: relative;
+    border: 1px solid #FFc300;
 }
 
 #certificate .cert-header {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #000000;
     margin-bottom: 20px;
+}
+
+.cert-header{
+    background-color: #FFc300;
+    width: 50%;
+    transform: translate(50%,-30%);
+}
+
+h1{
+    transform: translate(0%,25%);
 }
 
 #certificate h1 {
@@ -103,18 +119,39 @@ form button:hover {
     background-color: #0056b3;
 }
 
+
+#printButton{
+    color:#0056b3;
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#printButton:hover {
+    background-color: #0056b3;
+}
+
 @media print {
+
     body {
         margin: 0;
         background-color: #fff;
     }
 
     #certificate {
-        width: 100%;
-        height: auto;
+        width: 95%;
+        height: 300px;
         max-width: none;
         box-shadow: none;
         page-break-after: always;
+        border: 1px solid;
+        border: 1px solid #FFc300;
+        margin-top:150px;
     }
 
     .cert-footer {
@@ -122,6 +159,7 @@ form button:hover {
         display: flex;
         justify-content: space-between;
         padding: 0 50px;
+        align-items: flex-end;
     }
 
     .cert-footer .left, .cert-footer .right {
@@ -132,5 +170,8 @@ form button:hover {
         size: 11in 8.5in;
         margin: 1in;
     }
-}
 
+    .butt {
+        display: none !important;
+    }
+}
