@@ -1,3 +1,15 @@
+function redirectToPage() {
+    const type = document.getElementById('type').value;
+
+    if (type === 'casual') {
+        window.location.href = 'index.html';
+    } else if (type === 'joke') {
+        window.location.href = 'joke.html';
+    } else if (type === 'professional') {
+        window.location.href = 'pro.html';
+    }
+}
+
 function generateCertificate() {
     const name = document.getElementById('name').value;
     const title = document.getElementById('title').value;
@@ -12,7 +24,7 @@ function generateCertificate() {
     document.getElementById('certIssuer').innerText = issuer;
     document.getElementById('certHeader').innerText = `${title} Certification`;
 
-    document.getElementById('certificate').style.display = 'block';
+    certificate.style.display = 'block';
     document.getElementById('certForm').style.display = 'none';
     document.getElementById('returnButton').style.display = 'block';
     document.getElementById('printButton').style.display = 'block';
