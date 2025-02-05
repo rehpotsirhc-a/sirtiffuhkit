@@ -41,7 +41,7 @@ form button:hover {
 }
 
 #certForm{
-    transform: translate(0%,35%);
+    transform: translate(0%,50%);
 }
 
 #certificate {
@@ -64,7 +64,7 @@ form button:hover {
 }
 
 .cert-header{
-    background-color: #FFc300;
+    background-color: #0000ff;
     width: 50%;
     transform: translate(50%,-30%);
 }
@@ -153,7 +153,6 @@ h1{
         width: 800px;
         text-align: center;
         position: relative;
-        border: 1px solid #FFc300;
     }
 
     .cert-footer {
@@ -166,27 +165,27 @@ h1{
     }
 
     .cert-header{
-        background-color: #FFc300 !important;
         width: 50%;
         transform: translate(50%,-30%);
-    }
-
-    #cert-header{
-        background-color: #FFc300 !important;
-        width: 50%;
-        transform: translate(50%,-30%);
-    }
-    
+    }    
 
     .cert-footer .left, .cert-footer .right {
         width: 50%;
     }
+    
+    #returnButton {
+        display: none !important;
+    }
+
+    #printButton {
+        display: none !important;
+    }
+
+    .back{
+        display: none !important;
+    }
 
     @page {
         size: 11in 8.5in;
-    }
-
-    .butt {
-        display: none !important;
     }
 }
