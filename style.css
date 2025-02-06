@@ -156,7 +156,6 @@ h1{
         width: 800px;
         text-align: center;
         position: relative;
-        border: 1px solid #4c9e00;
     }
 
     .cert-footer {
@@ -169,7 +168,6 @@ h1{
     }
 
     .cert-header{
-        background-color: #4c9e00 !important;
         width: 50%;
         transform: translate(50%,-30%);
     }    
