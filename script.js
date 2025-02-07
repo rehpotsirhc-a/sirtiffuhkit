@@ -52,5 +52,4 @@ function printCertificate() {
     window.print();
 }
 
-// Call displaySelectedType on page load
 window.onload = displaySelectedType;

@@ -24,12 +24,8 @@
     
         <button type="button" onclick="generateCertificate()">Generate Certificate</button>
     
-
-            <a href="certselect.html" class="back"><button type="button">Reselect Certificate</button></a>
-  
+        <a href="certselect.html" class="back"><button type="button">Reselect Certificate</button></a>
     </form>
-
-
 
     <div id="certificate" style="display:none;">
         <div class="cert-header">
@@ -38,13 +34,12 @@
         <p>This certificate officially recognizes</p>
         <h2 id="certName"></h2>
         <p>as a certified <span id="certTitle"></span></p>
-        <p>because <span id="certReason"></span></p>
+        <p><span id="certReason"></span></p>
         <div class="cert-footer">
             <h4 id="certDate" class="left"></h4>
             <h4 id="certIssuer" class="right"></h4>
         </div>
     </div>
-    
     
     <button id="returnButton" type="button" onclick="returnToForm()" style="display:none;">Return to Form</button>
     <button id="printButton" type="button" onclick="printCertificate()" style="display:none;">Print Certificate</button>
@@ -52,5 +47,6 @@
     <div class="button-container">
         <a href="certselect.html" class="back"><button type="button">Reselect Certificate</button></a>
     </div>
+    
 </body>
 </html>
