@@ -9,6 +9,7 @@
 <body>
     <div id="selectedType"></div>
     <form id="certForm">
+        
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br><br>
         
@@ -20,10 +21,14 @@
         
         <label for="reason">Reason for Award:</label>
         <input type="text" id="reason" name="reason"><br><br>
-        
-        <button type="button" onclick="generateCertificate()">Generate Certificate</button>
-    </form>
     
+        <button type="button" onclick="generateCertificate()">Generate Certificate</button>
+    
+
+            <a href="certselect.html" class="back"><button type="button">Reselect Certificate</button></a>
+  
+    </form>
+
 
 
     <div id="certificate" style="display:none;">
@@ -33,7 +38,7 @@
         <p>This certificate officially recognizes</p>
         <h2 id="certName"></h2>
         <p>as a certified <span id="certTitle"></span></p>
-        <p>for <span id="certReason"></span></p>
+        <p>because <span id="certReason"></span></p>
         <div class="cert-footer">
             <h4 id="certDate" class="left"></h4>
             <h4 id="certIssuer" class="right"></h4>

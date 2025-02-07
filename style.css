@@ -41,7 +41,8 @@ form button:hover {
 }
 
 .button-container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -58,6 +59,35 @@ form button:hover {
     background-color: #0056b3;
 }
 
+#generateButton {
+    color: #0056b3;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#generateButton:hover {
+    background-color: #0056b3;
+}
+
+#reselectButton {
+    color: #0056b3;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#reselectButton:hover {
+    background-color: #0056b3;
+}
+
 #certForm {
     transform: translate(0%, 50%);
 }
@@ -67,8 +97,8 @@ form button:hover {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
     height: 350px;
+    width: 700px;
     margin: 20px auto;
     margin-top: 200px;
     text-align: center;
@@ -101,7 +131,12 @@ h1 {
 }
 
 #certificate p {
-    text-align: right;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#certName{
+    font-size: 40px;
 }
 
 #returnButton {
@@ -113,6 +148,23 @@ h1 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.cert-footer {
+    position: absolute;
+    bottom: 20px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.cert-footer .left {
+    text-align: left;
+}
+
+.cert-footer .right {
+    text-align: right;
 }
 
 #returnButton:hover {
@@ -149,15 +201,17 @@ h1 {
 
     #certificate {
         background: #fff;
-        padding: 0px;
+        padding: 20px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        height: 300px;
-        width: 10000px;
+        height: 400px;
+        width: 800px;
+        margin: 20px auto;
+        margin-top: 60px;
         text-align: center;
         position: relative;
+        border: 2px solid #4c9e00;
     }
-
     .cert-footer {
         position: static;
         display: flex;
@@ -169,8 +223,22 @@ h1 {
 
     .cert-header{
         width: 50%;
-        transform: translate(50%,-30%);
+        transform: translate(50%,-60%);
     }    
+
+    #certificate h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    
+    #certificate p {
+        text-align: center;
+        margin-top: 25px;
+    }
+    
+    #certName{
+        font-size: 60;
+    }
 
     .cert-footer .left, .cert-footer .right {
         width: 50%;
@@ -188,7 +256,11 @@ h1 {
         display: none !important;
     }
 
+    #selectedType{
+        display: none !important;
+    }
+
     @page {
-        size: 11in 8.5in;
+        size: 8in 5.5in;
     }
 }

@@ -73,8 +73,7 @@ form button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     height: 510px;
-    width: 100%;
-    max-width: 800px;
+    width: 1200px;
     margin-top: 200px;
     text-align: center;
     position: relative;
@@ -94,8 +93,12 @@ h1 {
 }
 
 #certificate h1 {
-    font-size: 50px;
+    font-size: 70px;
     margin-bottom: 10px;
+}
+
+#certName{
+    font-size: 60px;
 }
 
 #certificate h2, #certificate h3, #certificate h4 {
@@ -103,7 +106,7 @@ h1 {
 }
 
 #certificate p {
-    font-size: 24px;
+    font-size: 30px;
     margin: 20px 0;
 }
 
@@ -171,8 +174,8 @@ h1 {
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin: 20px auto;
-        height: 510px;
-        margin-top: 120px;
+        height: 600px;
+        width: 1000px;
         text-align: center;
         position: relative;
         color: white;
@@ -182,7 +185,21 @@ h1 {
             -2px -2px 0 #000,  
              2px -2px 0 #000,
             -2px  2px 0 #000,
-             2px  2px 0 #000;
+             2px  2px 0 #000; 
+    }
+
+    #certificate h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    #certName{
+        font-size: 60px;
+    }
+
+    #certificate p {
+        font-size: 40px;
+        margin: 30px 0;
     }
 
     .cert-footer {
@@ -215,7 +232,11 @@ h1 {
         display: none !important;
     }
 
+    #selectedType{
+        display: none !important;
+    }
+
     @page {
-        size: 11in 8.5in;
+        size: 8in 5.5in;
     }
 }

@@ -183,8 +183,9 @@ h1{
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        height: 350px;
-        width: 100vw;
+        max-width: 20000px;
+        height: 700px;
+        width: 1000px;
         margin: 20px auto;
         text-align: center;
         position: relative;
@@ -192,12 +193,26 @@ h1{
         font-family: apple chancery;
     }
 
-.innerbox{
-    background-color: rgb(255, 255, 255);
-    border: 2px solid #ffcc00;
-    border-radius: 3px;
-    height: 350px;
-}
+    #certificate h1 {
+        font-size: 60px;
+        margin-bottom: 0px;
+    }
+
+    #certificate p {
+        font-size: 40px;
+        margin: 0px 0;
+    }
+
+    #certName{
+        font-size: 70px;
+    }
+
+    .innerbox{
+        background-color: rgb(255, 255, 255);
+        border: 2px solid #ffcc00;
+        border-radius: 3px;
+        height: 690px;
+    }
 
     .cert-footer {
         position: static;
@@ -229,8 +244,12 @@ h1{
         display: none !important;
     }  
 
+    #selectedType{
+        display: none !important;
+    }
+
     @page {
-        size: 11in 8.5in;
+        size: 11in .5in;
     }
 }
 
