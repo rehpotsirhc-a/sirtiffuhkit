@@ -1,12 +1,23 @@
 function redirectToPage() {
     const type = document.getElementById('type').value;
+    let url = '';
 
     if (type === 'casual') {
-        window.location.href = 'index.html';
+        url = 'index.html';
     } else if (type === 'joke') {
-        window.location.href = 'joke.html';
+        url = 'joke.html';
     } else if (type === 'professional') {
-        window.location.href = 'pro.html';
+        url = 'pro.html';
+    }
+
+    window.location.href = `${url}?type=${type}`;
+}
+
+function displaySelectedType() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const type = urlParams.get('type');
+    if (type) {
+        document.getElementById('selectedType').innerText = `Selected Certificate: ${type.charAt(0).toUpperCase() + type.slice(1)}`;
     }
 }
 
@@ -40,3 +51,6 @@ function returnToForm() {
 function printCertificate() {
     window.print();
 }
+
+// Call displaySelectedType on page load
+window.onload = displaySelectedType;

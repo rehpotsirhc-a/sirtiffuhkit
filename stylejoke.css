@@ -40,41 +40,61 @@ form button:hover {
     background-color: #188331;
 }
 
-#certForm{
-    transform: translate(0%,50%);
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container .back button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-container .back button:hover {
+    background-color: #0056b3;
+}
+
+
+#certForm {
+    transform: translate(0%, 50%);
 }
 
 #certificate {
-    background: #fff;
+    background-image: url('rainbow-funny-meme-mlg-lsb1qwb1lx421etg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    height: 350px;
     margin: 20px auto;
+    height: 510px;
+    width: 100%;
+    max-width: 800px;
     margin-top: 200px;
     text-align: center;
     position: relative;
-    border: 2px solid #ff0000;
+    color: white;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000; 
 }
 
-#certificate .cert-header {
-    border-bottom: 2px solid #000000;
-    margin-bottom: 20px;
-}
-
-.cert-header{
-    background-color: #ff0000;
-    width: 50%;
-    transform: translate(50%,-30%);
-}
-
-h1{
-    transform: translate(0%,25%);
+h1 {
+    transform: translate(0%, -50%);
+    letter-spacing: 2px;
 }
 
 #certificate h1 {
-    font-size: 24px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
@@ -83,8 +103,8 @@ h1{
 }
 
 #certificate p {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 24px;
+    margin: 20px 0;
 }
 
 .cert-footer {
@@ -119,9 +139,8 @@ h1{
     background-color: #0056b3;
 }
 
-
-#printButton{
-    color:#0056b3;
+#printButton {
+    color: #0056b3;
     display: block;
     margin: 20px auto;
     background-color: #007bff;
@@ -136,7 +155,6 @@ h1{
     background-color: #0056b3;
 }
 
-
 @media print {
 
     body {
@@ -145,13 +163,26 @@ h1{
     }
 
     #certificate {
-        background: #fff;
+        background-image: url('rainbow-funny-meme-mlg-lsb1qwb1lx421etg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        height: 300px;
-        width: 800px;
+        margin: 20px auto;
+        height: 510px;
+        margin-top: 120px;
         text-align: center;
-
+        position: relative;
+        color: white;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: 
+            -2px -2px 0 #000,  
+             2px -2px 0 #000,
+            -2px  2px 0 #000,
+             2px  2px 0 #000;
     }
 
     .cert-footer {
@@ -160,18 +191,18 @@ h1{
         justify-content: space-between;
         padding: 0 50px;
         align-items: flex-end;
-        transform: translate(0%,70%);
+        transform: translate(0%, 70%);
     }
 
-    .cert-header{
+    .cert-header {
         width: 50%;
-        transform: translate(50%,-30%);
-    }    
+        transform: translate(50%, -30%);
+    }
 
     .cert-footer .left, .cert-footer .right {
         width: 50%;
     }
-    
+
     #returnButton {
         display: none !important;
     }
@@ -180,7 +211,7 @@ h1{
         display: none !important;
     }
 
-    .back{
+    .back {
         display: none !important;
     }
 

@@ -40,8 +40,26 @@ form button:hover {
     background-color: #188331;
 }
 
-#certForm{
-    transform: translate(0%,50%);
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container .back button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-container .back button:hover {
+    background-color: #0056b3;
+}
+
+#certForm {
+    transform: translate(0%, 50%);
 }
 
 #certificate {
@@ -63,14 +81,14 @@ form button:hover {
     margin-bottom: 20px;
 }
 
-.cert-header{
+.cert-header {
     background-color: #4c9e00;
     width: 50%;
-    transform: translate(50%,-30%);
+    transform: translate(50%, -30%);
 }
 
-h1{
-    transform: translate(0%,25%);
+h1 {
+    transform: translate(0%, 25%);
 }
 
 #certificate h1 {
@@ -83,24 +101,6 @@ h1{
 }
 
 #certificate p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.cert-footer {
-    position: absolute;
-    bottom: 20px;
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-.cert-footer .left {
-    text-align: left;
-}
-
-.cert-footer .right {
     text-align: right;
 }
 
@@ -149,11 +149,11 @@ h1{
 
     #certificate {
         background: #fff;
-        padding: 20px;
+        padding: 0px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         height: 300px;
-        width: 800px;
+        width: 10000px;
         text-align: center;
         position: relative;
     }

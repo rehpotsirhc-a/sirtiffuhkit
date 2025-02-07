@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="stylejoke.css">
 </head>
 <body>
+    <div id="selectedType"></div>
     <form id="certForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br><br>
@@ -22,16 +23,15 @@
         
         <button type="button" onclick="generateCertificate()">Generate Certificate</button>
     </form>
-    <a href="certselect.html" class="back"><button>Reselect Certificate</button></a>
 
     <div id="certificate" style="display:none;">
         <div class="cert-header">
             <h1 id="certHeader"></h1>
         </div>
-        <p>This certificate officially recognizes</p>
+        <p>Damn son,</p>
         <h2 id="certName"></h2>
-        <p>as a certified <span id="certTitle"></span></p>
-        <p>for <span id="certReason"></span></p>
+        <p> is a savage <span id="certTitle"></span></p>
+        <p>cus <span id="certReason"></span></p>
         <div class="cert-footer">
             <h4 id="certDate" class="left"></h4>
             <h4 id="certIssuer" class="right"></h4>
@@ -41,5 +41,8 @@
     <button id="returnButton" type="button" onclick="returnToForm()" style="display:none;">Return to Form</button>
     <button id="printButton" type="button" onclick="printCertificate()" style="display:none;">Print Certificate</button>
     <script src="script.js"></script>
+    <div class="button-container">
+        <a href="certselect.html" class="back"><button type="button">Reselect Certificate</button></a>
+    </div>
 </body>
 </html>
